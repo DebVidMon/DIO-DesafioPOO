@@ -23,9 +23,9 @@ public class Main {
         mentoria1.setDescricao("Live de interação para tirar dúvidas");
         mentoria1.setData(LocalDate.now());
 
-        System.out.println(curso1);
+        /*System.out.println(curso1);
         System.out.println(curso2);
-        System.out.println(mentoria1);
+        System.out.println(mentoria1);*/
 
         Bootcamp bootcamp = new Bootcamp();
                 bootcamp.setNome("Bootcamp Java Developer");
@@ -37,26 +37,26 @@ public class Main {
                 Dev devCami = new Dev();
                 devCami.setNome("Camila");
                 devCami.inscreverBootcamp(bootcamp);
-                System.out.println("Conteúdos Inscritos Camila:" + devCami.getConteudosInscritos());
+                System.out.println("Conteúdos Inscritos Camila: " + devCami.getConteudosInscritos());
                 devCami.progredir();
                 devCami.progredir();
                 System.out.println("-");
-                System.out.println("Conteúdos Inscritos Camila:" + devCami.getConteudosInscritos());
-                System.out.println("Conteúdos Concluídos Camila:" + devCami.getConteudosConcluidos());
-                System.out.println("XP:" + devCami.calcularTotalXp());
+                System.out.println("Conteúdos Inscritos Camila: " + devCami.getConteudosInscritos());
+                System.out.println("Conteúdos Concluídos Camila: " + devCami.getConteudosConcluidos());
+                System.out.println("XP: " + devCami.calcularTotalXp());
 
                 System.out.println("-------");
 
                 Dev devDeh = new Dev();
                 devDeh.setNome("Débora");
                 devDeh.inscreverBootcamp(bootcamp);
-                System.out.println("Conteúdos Inscritos Débora:" + devDeh.getConteudosInscritos());
+                System.out.println("Conteúdos Inscritos Débora: " + devDeh.getConteudosInscritos());
                 devDeh.progredir();
                 devDeh.progredir();
                 devDeh.progredir();
                 System.out.println("-");
-                System.out.println("Conteúdos Inscritos Débora:" + devDeh.getConteudosInscritos());
-                System.out.println("Conteúdos Concluidos Débora:" + devDeh.getConteudosConcluidos());
-                System.out.println("XP:" + devDeh.calcularTotalXp());
+                System.out.println("Conteúdos Inscritos Débora: " + devDeh.getConteudosInscritos());
+                System.out.println("Conteúdos Concluidos Débora: " + devDeh.getConteudosConcluidos());
+                System.out.println("XP: " + devDeh.calcularTotalXp());
     }
 }
